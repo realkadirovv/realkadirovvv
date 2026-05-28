@@ -162,14 +162,15 @@
             <div class="contact-box reveal">
                 <span class="tag">04. Contact</span>
                 <h2>Start a Conversation.</h2>
-                <form class="contact-form">
-                    <div class="form-row">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <textarea placeholder="Your Message..." rows="4"></textarea>
-                    <button type="submit" class="btn-main">Send Signal</button>
-                </form>
+                <form class="contact-form" action="mailto:yakupkadyrov5@gmail.com" method="GET" enctype="text/plain">
+    <div class="form-row">
+        <input type="text" name="subject" placeholder="Your Name" required>
+        <!-- The email input is kept for display, but mailto handles the sender natively -->
+        <input type="email" placeholder="Email" required>
+    </div>
+    <textarea name="body" placeholder="Your Message..." rows="4" required></textarea>
+    <button type="submit" class="btn-main">Send Signal</button>
+</form>
                 <div class="social-links">
                     <a href="mailto:yakupkadyrov5@gmail.com">Email</a>
                     <a href="https://github.com/realkadirovv" target="_blank">GitHub</a>
